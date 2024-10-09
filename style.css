@@ -1,0 +1,171 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4;
+   color: #333;
+   text-align: center;
+   padding: 20px;
+}
+
+header {
+   padding: 50px 0;
+   background-color: #222;
+   color: #fff;
+}
+
+h1 {
+   font-size: 3em;
+}
+
+p {
+   font-size: 1.2em;
+   margin-top: 10px;
+}
+
+.social-media {
+   margin: 50px 0;
+}
+
+.social-media h2 {
+   font-size: 2em;
+   margin-bottom: 20px;
+}
+
+.icons {
+   display: flex;
+   justify-content: center; /* Centraliza os ícones */
+   flex-wrap: wrap; /* Permite que os ícones se ajustem em várias linhas */
+   margin-top: 20px; /* Espaço acima dos ícones */
+}
+
+.icons a {
+   color: #fff;
+   padding: 15px;
+   margin: 0 10px;
+   font-size: 1.5em;
+   display: flex; /* Usar flexbox */
+   align-items: center; /* Centraliza verticalmente */
+   justify-content: center; /* Centraliza horizontalmente */
+   transition: background-color 0.3s;
+   width: 50px;  /* Largura do quadrado */
+   height: 50px; /* Altura do quadrado */
+   border-radius: 8px; /* Borda levemente arredondada */
+   text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Estilo específico para o ícone do Facebook */
+.icons a.facebook {
+   background-color: #4267B2;
+}
+
+/* Estilo específico para o ícone do Instagram */
+.icons a.instagram {
+   background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+/* Estilo específico para o ícone do YouTube */
+.icons a.youtube {
+   background-color: #FF0000; 
+}
+
+/* Estilo para o efeito hover */
+.icons a:hover {
+   background-color: #555; /* Cor de fundo quando passar o mouse */
+}
+
+.whatsapp {
+   margin: 50px 0;
+}
+
+.whatsapp-btn {
+   background-color: #25d366;
+   color: white;
+   padding: 15px 30px;
+   font-size: 1.5em;
+   text-decoration: none;
+   border-radius: 50px;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   transition: background-color 0.3s;
+}
+
+.whatsapp-btn i {
+   margin-right: 10px;
+   font-size: 1.5em;
+}
+
+.whatsapp-btn:hover {
+   background-color: #1ebe57;
+}
+
+footer {
+   margin-top: 50px;
+   padding: 20px;
+   background-color: #222;
+   color: #fff;
+}
+
+.header-content {
+   display: flex; /* Usando Flexbox para layout */
+   align-items: center; /* Alinha itens verticalmente ao centro */
+   justify-content: center; /* Alinha itens horizontalmente ao centro */
+   gap: 20px; /* Espaço entre imagem e vídeo */
+   margin: 20px 0; /* Margem superior e inferior */
+}
+
+.profile-img {
+   width: 300px; /* Ajusta a largura da imagem para 300px */
+   height: 300px; /* Define a altura da imagem para 300px para mantê-la quadrada */
+   object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+   border-radius: 10px; /* Adiciona bordas arredondadas, se desejar */
+}
+
+.video-container {
+   flex: 1; /* Permite que o vídeo ocupe o espaço restante */
+   max-width: 560px; /* Largura máxima para o vídeo */
+}
+
+iframe {
+   width: 100%; /* Faz o vídeo ocupar 100% da largura do contêiner */
+   height: 315px; /* Altura fixa para o vídeo */
+   border: none; /* Remove a borda padrão do iframe */
+}
+
+/* Consultas de mídia para ajustar layout em telas menores */
+@media (max-width: 768px) {
+   h1 {
+       font-size: 2.5em; /* Tamanho do título reduzido em telas menores */
+   }
+
+   p {
+       font-size: 1em; /* Tamanho da fonte reduzido em telas menores */
+   }
+
+   .icons {
+       flex-direction: row; /* Ícones lado a lado em dispositivos móveis */
+       align-items: center; /* Centraliza os ícones */
+       justify-content: center; /* Centraliza os ícones */
+   }
+
+   .icons a {
+       width: 40px; /* Largura reduzida dos ícones em telas menores */
+       height: 40px; /* Altura reduzida dos ícones em telas menores */
+       margin: 5px; /* Margem entre ícones em dispositivos móveis */
+   }
+
+   .whatsapp-btn {
+       font-size: 1.2em; /* Tamanho do botão reduzido em telas menores */
+       padding: 10px 20px; /* Ajuste do padding em telas menores */
+   }
+
+   .header-content {
+       flex-direction: column; /* Muda para coluna em telas menores */
+       gap: 10px; /* Menos espaço entre imagem e vídeo em telas menores */
+   }
+}
